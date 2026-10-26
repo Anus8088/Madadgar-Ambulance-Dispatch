@@ -2,58 +2,57 @@
 
 Unified algorithmic emergency response dispatch system uniting Karachi's welfare ambulance fleets (Edhi, Chhipa, JDC, Aman, Rescue 1122).
 
-Developed by:
+**Developed by:**
 - **Muhammad Anus**
 - **Sufyan Akhter**
 - **Rana Faraz Ahmed**
 
 ---
 
-## 💻 Apne Laptop Par Run Karne Ka Asaan Tareeqa (100% Python Flask)
+## 💻 How to Run on Your Laptop (100% Python Flask)
 
-Aapko kisi **Node.js**, **npm** ya **TypeScript** ki zaroorat nahi hai! Poora backend **Python Flask (`app.py`)** aur aapke **PostgreSQL (`emergency_db`)** par bana hua hai.
+No **Node.js**, **npm**, or **TypeScript** required! The entire backend is built using **Python Flask (`app.py`)** connected to **PostgreSQL (`emergency_db`)**.
 
-### Tareeqa 1: 1-Click Run (Sabse Asaan)
-Project folder ke andar mojood **`run.bat`** file par double click karein!
-Yeh khud-ba-khud dependencies install karega aur Flask server chala dega.
+### Method 1: 1-Click Run (Easiest)
+Double-click the **`run.bat`** file inside the project folder. It will automatically install dependencies and start the Flask server.
 
 ---
 
-### Tareeqa 2: Command Prompt (CMD) Se Chalana
+### Method 2: Command Prompt (CMD)
 
-1. Apne laptop par Command Prompt (CMD) kholein aur project folder mein jayein:
+1. Open Command Prompt (CMD) and navigate to the project directory:
    ```cmd
    cd "C:\Users\anusj\Documents\Ambulance Project\Madadgar"
    ```
 
-2. Python packages install karein:
+2. Install the required Python packages:
    ```cmd
    pip install -r requirements.txt
    ```
 
-3. Server start karein:
+3. Start the server:
    ```cmd
    python app.py
    ```
 
-4. Ab browser mein yeh link kholein:
+4. Open your web browser and go to:
    👉 **http://127.0.0.1:5000**
 
 ---
 
 ## 🗄️ Database Setup (pgAdmin / PostgreSQL)
 
-1. Apne laptop par **pgAdmin 4** kholein.
-2. Verify karein ke `emergency_db` database mojood hai.
-3. Database par right-click karke **Query Tool** kholein aur **`database.sql`** run karein.
-4. `app.py` mein aapka password (`Ans@ri8088`) pehle se set hai! Agar aap change karna chahein to `app.py` mein `PG_CONFIG` ke andar apna password update kar sakte hain.
+1. Open **pgAdmin 4** on your system.
+2. Verify that the `emergency_db` database is created.
+3. Right-click the database, open the **Query Tool**, and run the **`database.sql`** script.
+4. The database password (`Ans@ri8088`) is pre-configured in `app.py`. If you need to change it, update the `PG_CONFIG` dictionary inside `app.py`.
 
 ---
 
 ## 🔑 Login Credentials
 
 - **Admin Portal:**
-  - Username: `admin` | Password: `password` (ya `admin123`)
+  - Username: `admin` | Password: `password` (or `admin123`)
 - **Driver Portal:**
   - Username: `edhi101` | Password: `password`
   - Username: `chhipa201` | Password: `password`
